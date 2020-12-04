@@ -1,0 +1,14 @@
+.Heading {
+    margin: 0;
+}
+
+h1.Heading {
+    font-family: 'Mountains of Christmas', cursive;
+    color: hsl(0, 100%, 65%);
+    margin-top: 4rem;
+    text-align: center;
+}
+
+h2.Heading {
+    margin-top: 2rem;
+}

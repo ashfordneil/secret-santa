@@ -1,7 +1,15 @@
 .App {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     max-width: 90ch;
     margin: 0 auto;
     padding: 0 2ch;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.App__spacer {
+    flex: 1;
 }

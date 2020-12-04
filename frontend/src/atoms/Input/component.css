@@ -1,0 +1,19 @@
+.TextInput {
+    display: grid;
+    grid-template-areas: 'label' 'input';
+    row-gap: 0.5rem;
+}
+
+.TextInput__label {
+    grid-area: label;
+    padding: 0 1ch;
+    margin: 0;
+}
+
+.TextInput__input {
+    grid-area: input;
+    font-size: inherit;
+    padding: 0.5rem 1ch;
+    border-radius: 0.5ch;
+    border: none;
+}
