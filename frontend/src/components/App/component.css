@@ -1,0 +1,7 @@
+.App {
+    height: 100vh;
+    width: 100%;
+    max-width: 90ch;
+    margin: 0 auto;
+    padding: 0 2ch;
+}
