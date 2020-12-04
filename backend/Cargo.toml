@@ -1,0 +1,19 @@
+[package]
+name = "santa"
+version = "0.1.0"
+authors = ["Neil Ashford <me@neilashford.dev>"]
+edition = "2018"
+
+[dependencies]
+[dependencies.anyhow]
+version = "1.0.34"
+
+[dependencies.rocket]
+git = "https://github.com/sergiobenitez/rocket"
+
+[dependencies.rocket_contrib]
+git = "https://github.com/sergiobenitez/rocket"
+
+[dependencies.tokio]
+version = "0.2.23"
+features = ["macros"]
