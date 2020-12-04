@@ -1,15 +1,10 @@
 import React from 'react';
 import { useAsync } from 'react-async-hook';
 
-export const Healthz: React.FC = () => {
-  const state = useAsync(async () => {
-    const result = await fetch('/api/healthz');
-    if (!result.ok) {
-      throw new Error(`Received HTTP ${result.status} from health check`);
-    }
+import { healthz } from 'network/Healthz';
 
-    return await result.text();
-  }, []);
+export const Healthz: React.FC = () => {
+  const state = useAsync(healthz, []);
 
   switch (state.status) {
     case 'not-requested':
